@@ -97,6 +97,7 @@ const identifikatory = nezaplaceneObjednavky.map((objednavky) => {
 });
 const emaily = nezaplaceneObjednavky.map((objednavky) => {
   return objednavky.uzivatel.jmeno + ' ' + objednavky.uzivatel.email;
+  // return `${objednavka.uzivatel.jmeno} <${objednavka.uzivatel.email}>`
 });
 
 processIdentifiers(identifikatory);
